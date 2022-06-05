@@ -14,8 +14,8 @@ const gameFileUrl = {
 
 async function insertCode () {
 	try {
-		const request = await (await fetch(await gameFileUrl.get())).text();
-		const cheatMenuRequest = await (await fetch(await cheatMenuUrl.get())).text();
+		const request = await (await fetch(await gameFileUrl.get() || "https://raw.githubusercontent.com/ProdigyAPI/ProdigyGameFilePatchGenerator/master/game-files/current.js")).text();
+		const cheatMenuRequest = await (await fetch(await cheatMenuUrl.get() || "https://raw.githubusercontent.com/ProdigyAPI/ProdigyX/master/dist/extension-bundle.js")).text();
 		document.documentElement.setAttribute("onreset", `${request}\nSW.Load.decrementLoadSemaphore();\n${cheatMenuRequest.replaceAll("new URL", "new window.URL")}`);
 		document.documentElement.dispatchEvent(new CustomEvent("reset"));
 		document.documentElement.removeAttribute("onreset");
