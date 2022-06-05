@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 	let gameFileURL = await gameFileUrl.get();
 
 	if (!cheatMenuURL) {
-		await cheatMenuUrl.set("https://raw.githubusercontent.com/ProdigyAPI/ProdigyX/70be96850d143ac5a60593717e22e604f1dd85e7/dist/extension-bundle.js");
+		await cheatMenuUrl.set("https://raw.githubusercontent.com/ProdigyAPI/ProdigyX/master/dist/extension-bundle.js");
 		cheatMenuURL = await cheatMenuUrl.get();
 	}
 
