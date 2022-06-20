@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Prodigy X Loader",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A loader for the cheat menu Prodigy X.",
 	"icons": {
 		"16": "icons/16.png",
