@@ -9,73 +9,82 @@
 	<div class="app">
 		<h3 class="text-3xl text-center">Prodigy X Loader</h3>
 
-		<div>
-			<label for="cheat-menu-url" class="left-[10%] text-base relative mt-3">Cheat Menu URL</label>
-			<input
-				type="url"
-				id="cheat-menu-url"
-				class="
-					mt-2
-					form-control
-					block
-					w-4/5
-					left-[10%]
-					relative
-					px-3
-					py-1.5
-					text-base
-					font-normal
-					text-gray-700
-					bg-white bg-clip-padding
-					border border-solid border-gray-300
-					rounded
-					transition
-					ease-in-out
-					m-0
-					focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-					peer
-				"
-				placeholder="Cheat Menu URL"
-				required
-			/>
-			<p class="invisible peer-invalid:visible text-center text-red-500 text-xl">Invalid URL</p>
+		<div class="text-center">
+			Open up Prodigy and on the top left of the screen, you will see the cheat menu.
 		</div>
 
-		<div>
-			<label for="game-file-url" class="left-[10%] text-base relative mt-3">Game File URL</label>
-			<input
-				type="url"
-				id="game-file-url"
-				class="
-					mt-2
-					form-control
-					block
-					w-4/5
-					left-[10%]
-					relative
-					px-3
-					py-1.5
-					text-base
-					font-normal
-					text-gray-700
-					bg-white bg-clip-padding
-					border border-solid border-gray-300
-					rounded
-					transition
-					ease-in-out
-					m-0
-					focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-					peer
-				"
-				placeholder="Game File URL"
-				required
-			/>
-			<p class="invisible peer-invalid:visible text-center text-red-500 text-xl">Invalid URL</p>
-		</div>
+		<details>
+			<summary class="ml-3">Developer Options</summary>
+			<div class="content">
+				<div>
+					<label for="cheat-menu-url" class="left-[10%] text-base relative mt-3">Cheat Menu URL</label>
+					<input
+						type="url"
+						id="cheat-menu-url"
+						class="
+							mt-2
+							form-control
+							block
+							w-4/5
+							left-[10%]
+							relative
+							px-3
+							py-1.5
+							text-base
+							font-normal
+							text-gray-700
+							bg-white bg-clip-padding
+							border border-solid border-gray-300
+							rounded
+							transition
+							ease-in-out
+							m-0
+							focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+							peer
+						"
+						placeholder="Cheat Menu URL"
+						required
+					/>
+					<p class="invisible peer-invalid:visible text-center text-red-500 text-xl">Invalid URL</p>
+				</div>
 
-		<div class="flex justify-center">
-			<button id="save-button" type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Save</button>
-		</div>
+				<div>
+					<label for="game-file-url" class="left-[10%] text-base relative mt-3">Game File URL</label>
+					<input
+						type="url"
+						id="game-file-url"
+						class="
+							mt-2
+							form-control
+							block
+							w-4/5
+							left-[10%]
+							relative
+							px-3
+							py-1.5
+							text-base
+							font-normal
+							text-gray-700
+							bg-white bg-clip-padding
+							border border-solid border-gray-300
+							rounded
+							transition
+							ease-in-out
+							m-0
+							focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+							peer
+						"
+						placeholder="Game File URL"
+						required
+					/>
+					<p class="invisible peer-invalid:visible text-center text-red-500 text-xl">Invalid URL</p>
+				</div>
+
+				<div class="flex justify-center">
+					<button id="save-button" type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Save</button>
+				</div>
+			</div>
+		</details>	
 	</div>
 
 	<script src="popup.js"></script>
