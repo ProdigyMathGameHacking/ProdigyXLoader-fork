@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "Prodigy X Loader",
-	"version": "1.0.1",
-	"description": "A loader for the cheat menu Prodigy X.",
+	"name": "Prodigy Hacking Extension | X Loader",
+	"version": "1.0.2",
+	"description": "A loader for the Prodigy Hack Prodigy X.",
 	"icons": {
 		"16": "icons/16.png",
 		"32": "icons/32.png",
